@@ -39,10 +39,10 @@ Also extract the relationships between these nodes. Return the result as JSON us
 
 {
   "nodes": [
-    {"id": "N0", "label": "인간", "properties": {"name": "Tanjiro Kamado"}}
+    {"id": "N0", "label": "인간", "properties": {{"name": "Ash Ketchum"}}}
   ],
   "relationships": [
-    {"type": "FIGHTS", "start_node_id": "N0", "end_node_id": "N13", "properties": {"outcome": "victory"}}
+    {"type": "BATTLES", "start_node_id": "N0", "end_node_id": "N3", "properties": {{"outcome": "victory", "badge": "Boulder Badge"}}}
   ]
 }
 
@@ -51,11 +51,9 @@ Additional rules:
 - Skip any relationship if one of its entities is not in NODES.
 - Only output valid relationships where both endpoints exist in NODES and the direction matches their types.
 
-${node}
+{NODES}
 
 """
-
-# 영어 이름 → 한글 이름 변환 매핑 테이블
 
 
 # ---------------------------
@@ -210,10 +208,10 @@ def save_output(episodes: List[dict], final_graph: GraphResponse):
 def main():
   try:
     episode_links = [
-      "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba_season_1",
-      "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba_season_2",
-      "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba_season_3",
-      "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba_season_4",
+      "https://en.wikipedia.org/wiki/Pok%C3%A9mon:_Indigo_League#References",
+      # "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba_season_2",
+      # "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba_season_3",
+      # "https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba_season_4",
     ]
     all_episodes = []
     for link in episode_links:

@@ -90,3 +90,55 @@ KOREAN_NODE_MAP = {
     "Dragonite": "망나뇽",
     "Mew": "뮤"
 }
+
+# AI에게 관계 추출 방식을 알려주기 위한 예시 데이터
+RELATIONSHIP_EXAMPLES = [
+    {
+        "type": "OWNS",
+        "start_node_id": "N0",
+        "end_node_id": "N16",
+        "properties": {"since": "Episode 1", "comment": "Ash and Pikachu's first meeting"}
+    },
+    {
+        "type": "BATTLES",
+        "start_node_id": "N16",
+        "end_node_id": "N20",
+        "properties": {"outcome": "victory", "context": "Pikachu vs Lt. Surge's Raichu"}
+    },
+    {
+        "type": "BATTLES_TRAINER",
+        "start_node_id": "N0",
+        "end_node_id": "N8",
+        "properties": {"outcome": "rivalry", "context": "Ash vs Gary's constant competition"}
+    },
+    {
+        "type": "EVOLVES_TO",
+        "start_node_id": "N12",
+        "end_node_id": "N17",
+        "properties": {"method": "level_up", "context": "Charmander evolves into Charizard"}
+    },
+    {
+        "type": "CAPTURES",
+        "start_node_id": "N0",
+        "end_node_id": "N11",
+        "properties": {"location": "Hidden Village", "pokemon": "Bulbasaur"}
+    },
+    {
+        "type": "RELEASES",
+        "start_node_id": "N0",
+        "end_node_id": "N19",
+        "properties": {"reason": "mating_season", "context": "Bye Bye Butterfree"}
+    },
+    {
+        "type": "TEAMS_UP",
+        "start_node_id": "N4",
+        "end_node_id": "N5",
+        "properties": {"group": "Team Rocket", "goal": "Stealing Pikachu"}
+    }
+]
+
+# 프롬프트에서 사용할 관계 타입 정의 (리스트 형태)
+RELATIONSHIP_TYPES = [
+    "OWNS", "BATTLES", "BATTLES_TRAINER", 
+    "EVOLVES_TO", "CAPTURES", "RELEASES", "TEAMS_UP"
+]
