@@ -1,135 +1,19 @@
 # Pokemon
-## WSL 알아보기
 
-- ubuntu 설치
-```bash
-wsl --install ubuntu
-```
+## 🔍 시행착오 및 최적화 과정 (Troubleshooting & Iteration)
 
-- 가상화 목록
-```bash
-wsl -l -v
-```
+프로젝트를 진행하며 데이터 정확도 향상과 대용량 처리 효율화를 위해 거친 시행착오 및 개선 기록입니다.
 
-- Ubuntu 재접속(WSL)
-```bash
-wsl -d Ubuntu
-```
-
-- Ubuntu 데이터 삭제
-```bash
-wsl --unregister Ubuntu
-```
-
-## Ubuntu 설정
-
-- package 설치
-```bash
-sudo apt update && sudo apt -y upgrade
-```
-
-- python 설치
-```bash
-sudo apt install -y git python3 python3-venv python3-pip
-```
-
-- python 버젼 확인
-```bash
-python3 --version
-```
-
-## Hugginface 
-
-- 인증 (로그인)
-```bash
-huggingface-cli login
-```
+| No | 시행 유형 | 모델 | 내용 | 범위 (Season) | 기대 결과 | 결과 및 피드백 |
+|:---:|:---:|:---:|:---|:---:|:---|:---|
+| **0** | **비교 기준** | `qwen3.5:9b` | `UPDATED_TEMPLATE` 적용 (포켓몬 시놉시스로 교체). 초기 시놉시스 노드 및 관계도 설계를 위한 기준 수립 | 1 | 82개 에피소드의 관계도 정상 도출 | JSON 데이터는 생성되었으나, 일부 인물명이 영어/일본어로 혼용되어 데이터 오염 발생 |
+| **1** | **모델 교체** | `gemma` | 기존 1번 시놉시스를 활용하여 모델 간 성능 및 정확도 비교 | 1 | 처리 속도 및 정확성 지표 확보 | 모델별 텍스트 이해도 차이 확인 및 최적 모델 선정을 위한 벤치마크 데이터 확보 |
+| **2** | **대용량 처리** | `ministral-3:8b` | 시즌 10개(520개 에피소드) 대용량 데이터 처리를 위한 전용 모델 도입 | 10 | 대용량 모델 도입을 통한 처리 속도 상승 및 효율화 | 기존 동기(Sync) 방식은 대용량 처리에 한계. `async` 비동기 방식으로 로직 개편 및 JSON 빈 값 오류 수정 완료 |
+| **3** | **로직 추가** | `qwen3.5:9b` | 수동 노드 추가 방식 탈피. AI가 에피소드별 등장인물을 자동 감지하여 노드 추가 및 그래프 데이터 적재 | 2 | 추가 시즌 에피소드 등장 시 자동 노드 확장 | 신규 에피소드 등장인물에 대한 유연한 그래프 확장성 및 자동화 프로세스 구축 |
 
 ---
 
-- [token 생성](https://huggingface.co/settings/tokens)
-```bash
-export HF_TOKEN="토큰_값"
-```
-
-## VLLM 설정
-
-- 작업 공간(폴더) 만들기
-```bash
-mkdir -p ~/ai/vllm
-cd ~/ai/vllm
-```
-
-- python 가상화(격리화) 구성하기
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-- Huggingface hub 설치
-```bash
-pip install -U "huggingface_hub"
-```
-
-- GPU 확인
-```bash
-nvidia-smi
-```
-
-- python 표준 바이너리 배포 포멧 설치
-```bash
-python -m pip install -U pip wheel
-```
-
-- vllm 설치
-```bash
-pip install -U vllm
-```
-
-- python package 목록 확인
-```bash
-pip list
-```
-
-- vllm 설치 확인
-```bash
-python -c "import vllm; print(vllm.__version__)"
-```
-
-- vllm 명령어 확인
-```bash
-vllm --help
-```
-
-- VLLM 서버 실행
-```bash
-vllm serve \
-kakaocorp/kanana-nano-2.1b-base \
---gpu-memory-utilization 0.8 
-```
-
-- VLLM 모델 확인
-```bash
-ls -l ~/.cache/huggingface/hub/
-```
-
-- GPU 사용량 확인
-```bash
-nvidia-smi dmon -s pucm
-```
-
-- CURL 사용
-```bash
-# Call the server using curl (OpenAI-compatible API):
-curl -X POST "http://127.0.0.1:8000/v1/chat/completions" \
-	-H "Content-Type: application/json" \
-	--data '{
-		"model": "kakaocorp/kanana-nano-2.1b-base",
-		"messages": [
-			{
-				"role": "user",
-				"content": "What is the capital of France?"
-			}
-		]
-	}'
-```
+### 💡 주요 개선 사항 요약
+* **데이터 정제:** 인물명 혼용 문제를 해결하기 위해 한글 매핑 로직 및 프롬프트 제약 조건 강화
+* **성능 최적화:** 대용량 데이터(500+ 에피소드) 처리를 위해 동기 방식을 비동기(`async`) 처리 방식으로 전환하여 시간 단축
+* **자동화 로직:** 노드 수동 관리의 번거로움을 AI 자동 감지 로직으로 대체하여 데이터 확장성 확보
