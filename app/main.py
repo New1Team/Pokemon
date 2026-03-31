@@ -57,8 +57,11 @@ Additional rules:
 ### Predefined NODES List:
 <<NODES_LIST>>
 
+If a character's name is not exactly in the NODES list (e.g., 'the boss', 'Dratini'), DO NOT extract that relationship at all.
+
 """
 # 추후 변수처리 위하여 <<내용>> 삽입
+# 노드 리스트에 없는 관계 추출 막기위해 if~ 삽입
 
 # ---------------------------
 # Ollama LLM 호출 함수
