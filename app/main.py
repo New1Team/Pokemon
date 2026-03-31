@@ -6,7 +6,7 @@ from typing import List, Optional, Dict, Union
 from requests import get
 from bs4 import BeautifulSoup as bs
 from pydantic import BaseModel
-from utils.data import KOREAN_NODE_MAP, NODES
+from utils.data import KOREAN_NODE_MAP, NODES, RELATIONSHIP_TYPES # 데이터 받아오기
 
 # 속성 타입 정의 (문자열, 숫자, bool, None)
 PropertyValue = Union[str, int, float, bool, None]
@@ -32,17 +32,17 @@ class GraphResponse(BaseModel):
 # ----------------------------------------
 # LLM에 전달되는 템플릿: 노드와 관계 추출 규칙
 # ----------------------------------------
-UPDATED_TEMPLATE = f"""
+UPDATED_TEMPLATE = """
 You are a top-tier algorithm designed for extracting information in structured formats to build a knowledge graph. Extract the entities (nodes) and specify their type from the following text, but **you MUST select nodes ONLY from the following predefined set** (see the provided NODES list below). Do not create any new nodes or use names that do not exactly match one in the NODES list.
 
 Also extract the relationships between these nodes. Return the result as JSON using the following format:
 
 {
   "nodes": [
-    {"id": "N0", "label": "인간", "properties": {{"name": "Ash Ketchum"}}}
+    {"id": "N0", "label": "인간", "properties": {"name": "Ash Ketchum"}}
   ],
   "relationships": [
-    {"type": "BATTLES", "start_node_id": "N0", "end_node_id": "N3", "properties": {{"outcome": "victory", "badge": "Boulder Badge"}}}
+    {"type": "BATTLES", "start_node_id": "N0", "end_node_id": "N3", "properties": {"outcome": "victory", "badge": "Boulder Badge"}}
   ]
 }
 
@@ -51,10 +51,14 @@ Additional rules:
 - Skip any relationship if one of its entities is not in NODES.
 - Only output valid relationships where both endpoints exist in NODES and the direction matches their types.
 
-{NODES}
+### Allowed Relationship Types:
+<<REL_TYPES>>
+
+### Predefined NODES List:
+<<NODES_LIST>>
 
 """
-
+# 추후 변수처리 위하여 <<내용>> 삽입
 
 # ---------------------------
 # Ollama LLM 호출 함수
@@ -119,7 +123,9 @@ def process_data(episodes: List[dict]) -> GraphResponse:
   print("=== 데이터 처리 시작 ===")
 
   chunk_graphs: List[GraphResponse] = []  # 에피소드별 그래프 저장
-    
+  # prompt 변수처리 위한 코드
+  full_template = UPDATED_TEMPLATE.replace("<<NODES_LIST>>", json.dumps(NODES, ensure_ascii=False))
+  full_template = full_template.replace("<<REL_TYPES>>", str(RELATIONSHIP_TYPES))  
   for episode in episodes:
     if not episode.get("synopsis"):
       print(f"에피소드 S{episode['season']}E{episode['episode_in_season']:02d}: 시놉시스가 없어 건너뜀")
@@ -159,8 +165,13 @@ def process_data(episodes: List[dict]) -> GraphResponse:
 # 위키피디아 에피소드 데이터 수집
 # ------------------------------------------------------
 def fetch_episode(link: str) -> List[dict]:
-  season = int(re.search(r"season_(\d+)", link).group(1))  # 시즌 번호 추출
-  print(f"Fetching Season {season} from: {link}")
+  # 에피소드 명 팔로우 위한 코드
+  match = re.search(r"mon:_([^#\s?]+)", link)
+  if match:
+    season = match.group(1)
+    print(f"Fetching Season {season} from: {link}")
+  else:
+    season = "Unknown_Season"
   headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)"}  # 요청 헤더
   response = get(link, headers=headers)  # GET 요청
   
