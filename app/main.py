@@ -6,6 +6,7 @@ from typing import List, Optional, Dict, Union
 from requests import get
 from bs4 import BeautifulSoup as bs
 from pydantic import BaseModel
+from utils.data import KOREAN_NODE_MAP, NODES
 
 # 속성 타입 정의 (문자열, 숫자, bool, None)
 PropertyValue = Union[str, int, float, bool, None]
@@ -31,7 +32,7 @@ class GraphResponse(BaseModel):
 # ----------------------------------------
 # LLM에 전달되는 템플릿: 노드와 관계 추출 규칙
 # ----------------------------------------
-UPDATED_TEMPLATE = """
+UPDATED_TEMPLATE = f"""
 You are a top-tier algorithm designed for extracting information in structured formats to build a knowledge graph. Extract the entities (nodes) and specify their type from the following text, but **you MUST select nodes ONLY from the following predefined set** (see the provided NODES list below). Do not create any new nodes or use names that do not exactly match one in the NODES list.
 
 Also extract the relationships between these nodes. Return the result as JSON using the following format:
@@ -50,57 +51,17 @@ Additional rules:
 - Skip any relationship if one of its entities is not in NODES.
 - Only output valid relationships where both endpoints exist in NODES and the direction matches their types.
 
-NODES =
-[
-  {"id":"N0",  "label":"인간", "properties":{"name":"Tanjiro Kamado"}},
-  {"id":"N1",  "label":"인간", "properties":{"name":"Nezuko Kamado"}},
-  {"id":"N2",  "label":"인간", "properties":{"name":"Giyu Tomioka"}},
-  {"id":"N3",  "label":"인간", "properties":{"name":"Sakonji Urokodaki"}},
-  {"id":"N4",  "label":"인간", "properties":{"name":"Sabito"}},
-  {"id":"N5",  "label":"인간", "properties":{"name":"Makomo"}},
-  {"id":"N6",  "label":"인간", "properties":{"name":"Zenitsu Agatsuma"}},
-  {"id":"N7",  "label":"인간", "properties":{"name":"Inosuke Hashibira"}},
-  {"id":"N8",  "label":"인간", "properties":{"name":"Kanao Tsuyuri"}},
-  {"id":"N9",  "label":"인간", "properties":{"name":"Kyojuro Rengoku"}},
-  {"id":"N10", "label":"인간", "properties":{"name":"Kagaya Ubuyashiki"}},
-  {"id":"N11", "label":"인간", "properties":{"name":"Shinobu Kocho"}},
-  {"id":"N12", "label":"인간", "properties":{"name":"Sanemi Shinazugawa"}},
-  {"id":"N13", "label":"도깨비", "properties":{"name":"Muzan Kibutsuji"}},
-  {"id":"N14", "label":"도깨비", "properties":{"name":"Susamaru"}},
-  {"id":"N15", "label":"도깨비", "properties":{"name":"Yahaba"}},
-  {"id":"N16", "label":"도깨비", "properties":{"name":"Kyogai"}},
-  {"id":"N17", "label":"도깨비", "properties":{"name":"Rui"}},
-  {"id":"N18", "label":"도깨비", "properties":{"name":"Enmu"}}
-]
+${node}
+
 """
 
 # 영어 이름 → 한글 이름 변환 매핑 테이블
-KOREAN_NODE_MAP = {
-  "Tanjiro Kamado": "카마도 탄지로",
-  "Nezuko Kamado": "카마도 네즈코",
-  "Giyu Tomioka": "토미오카 기유",
-  "Sakonji Urokodaki": "우로코다키 사콘지",
-  "Sabito": "사비토",
-  "Makomo": "마코모",
-  "Zenitsu Agatsuma": "아가츠마 젠이츠",
-  "Inosuke Hashibira": "하시비라 이노스케",
-  "Kanao Tsuyuri": "츠유리 카나오",
-  "Kyojuro Rengoku": "렌고쿠 쿄쥬로",
-  "Kagaya Ubuyashiki": "우부야시키 카가야",
-  "Shinobu Kocho": "코쵸우 시노부",
-  "Sanemi Shinazugawa": "시나즈가와 사네미",
-  "Muzan Kibutsuji": "키부츠지 무잔",
-  "Susamaru": "스사마루",
-  "Yahaba": "야하바",
-  "Kyogai": "쿄우가이",
-  "Rui": "루이",
-  "Enmu": "엔무",
-}
+
 
 # ---------------------------
 # Ollama LLM 호출 함수
 # ---------------------------
-def llm_call_structured(prompt: str, model: str = "gemma3:4b") -> GraphResponse:
+def llm_call_structured(prompt: str, model: str = "qwen3.5:9b") -> GraphResponse:
 
   final_prompt = prompt + """
   Return ONLY valid JSON. Do NOT include explanations or commentary.
