@@ -1,0 +1,2 @@
+[console_scripts]
+ollama_llm = ollama_llm:main
