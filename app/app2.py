@@ -9,7 +9,7 @@ from settings import settings
 # 🎯 Ollama Client 설정
 # -------------------------
 client = ollama.Client(host=settings.ollama_host) # Ollama 서버에 접속하기 위한 클라이언트 객체 생성, 호스트와 포트 지정
-modelName = "qwen3.5:9b" # Ollama 모델 이름 지정 (사용할 LLM 모델)
+modelName = "qwen2.5:3b" # Ollama 모델 이름 지정 (사용할 LLM 모델)
 
 # -------------------------
 # 🎯 Neo4j 연결 설정

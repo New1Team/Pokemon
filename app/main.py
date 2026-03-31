@@ -21,8 +21,8 @@ class Node(BaseModel):
 
 class Relationship(BaseModel):
   type: str  # 관계 유형
-  start_node_id: str  # 시작 노드 ID
-  end_node_id: str  # 끝 노드 ID
+  start_node_id: Optional[str]=None # 시작 노드 ID
+  end_node_id: Optional[str]=None  # 끝 노드 ID
   properties: Optional[Dict[str, PropertyValue]] = None  # 관계 속성
 
 class GraphResponse(BaseModel):
@@ -63,7 +63,7 @@ Additional rules:
 # ---------------------------
 # Ollama LLM 호출 함수
 # ---------------------------
-def llm_call_structured(prompt: str, model: str = "qwen3.5:9b") -> GraphResponse:
+def llm_call_structured(prompt: str, model: str = "qwen2.5:3b") -> GraphResponse:
 
   final_prompt = prompt + """
   Return ONLY valid JSON. Do NOT include explanations or commentary.
@@ -77,11 +77,10 @@ def llm_call_structured(prompt: str, model: str = "qwen3.5:9b") -> GraphResponse
 
   # 모델 응답 텍스트 추출
   text = response["message"]["content"]
-
+  
   # JSON 파싱 시도
   try:
     parsed = json.loads(text)
-    print(parsed)
   except json.JSONDecodeError:
     # 전체 텍스트에서 JSON 블록만 추출
     json_text = re.search(r"\{.*\}", text, re.S)
@@ -134,7 +133,8 @@ def process_data(episodes: List[dict]) -> GraphResponse:
     print(f"에피소드 처리 중: 시즌 {episode['season']}, 에피소드 {episode['episode_in_season']}")
     
     try:
-      prompt = UPDATED_TEMPLATE + f"\n 입력값\n {episode['synopsis']}"  # LLM 입력 프롬프트
+      prompt = full_template + f"\n 입력값\n {episode['synopsis']}"  # LLM 입력 프롬프트
+      # print("prompt: ", prompt)
       graph_response = llm_call_structured(prompt)  # LLM 호출
 
       episode_number = f"S{episode['season']}E{episode['episode_in_season']:02d}"  # 에피소드 번호 문자열
@@ -145,9 +145,10 @@ def process_data(episodes: List[dict]) -> GraphResponse:
         relationship.properties["episode_number"] = episode_number  # 관계에 에피소드 번호 부여
           
       for node in graph_response.nodes:
-        english_name = node.properties.get("name", "")
-        if english_name in KOREAN_NODE_MAP:
-          node.properties["name"] = KOREAN_NODE_MAP[english_name]  # 영어 → 한글 변환
+        if node.properties: # 속성 있을때만 실행
+          english_name = node.properties.get("name", "")
+          if english_name in KOREAN_NODE_MAP:
+            node.properties["name"] = KOREAN_NODE_MAP[english_name]  # 영어 → 한글 변환
       
       chunk_graphs.append(graph_response)  # 결과 저장
         
