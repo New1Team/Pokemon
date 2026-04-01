@@ -9,7 +9,7 @@ from settings import settings
 # 🎯 Ollama Client 설정
 # -------------------------
 client = ollama.Client(host=settings.ollama_host) # Ollama 서버에 접속하기 위한 클라이언트 객체 생성, 호스트와 포트 지정
-modelName = "qwen2.5:3b" # Ollama 모델 이름 지정 (사용할 LLM 모델)
+modelName = "gemma3:4b" # Ollama 모델 이름 지정 (사용할 LLM 모델)
 
 # -------------------------
 # 🎯 Neo4j 연결 설정
@@ -60,7 +60,9 @@ llm = ConnLLM(model_name=modelName)
 # -------------------------
 examples = [
   # 예시: 사용자 질문 -> Cypher 쿼리 매핑
-  "USER INPUT: '토미오카 기유는 시즌 1에서 어떤 역할을 했는지 에피소드별로 알려줘.' QUERY: MATCH (n {name: '토미오카 기유'})-[r]-(m) RETURN n, r, m, properties(r) AS rel_props ORDER BY r.episode_number"
+ "User: 로사가 가진 포켓몬은? Cypher: MATCH (n:인간 {name: '로사'})-[:OWNS]->(m:포켓몬) RETURN n, m",
+  "User: 지우와 피카츄의 관계는? Cypher: MATCH (n:인간 {name: '지우'})-[r]-(m:포켓몬 {name: '피카츄'}) RETURN n, r, m",
+  "User: 특정 에피소드 출연진은? Cypher: MATCH (n)-[r]-(m) WHERE r.episode_number = 'S01E01' RETURN n, r, m"
 ]
 
 # Text2CypherRetriever 생성
@@ -133,14 +135,23 @@ def graphrag_pipeline(user_question):
 # 🎯 메인 실행부
 # -------------------------
 if __name__ == "__main__":
-  # 테스트할 질문 리스트
-  queries = [
-    "카마도 탄지로는 시즌 1에서 에피소드별로 어떤 활약을 했어?",
-  ]
-  
-  # 질문 리스트를 순회하며 파이프라인 실행
-  for query in queries:
-    print(query)            # 질문 출력
-    print("-"*100)          # 구분선 출력
-    print(graphrag_pipeline(query))  # 파이프라인 실행 후 결과 출력
-    print("-"*100)          # 구분선 출력
+  print("="*50)
+  print("✨포켓몬 지식그래프 Q&A 시작✨")
+  print("종료를 원하시면 'bye'를 입력하세요.")
+  print("="*50)
+  while True:
+    user_input = input('\n 무엇을 도와드릴까요?👀: ').strip()
+    if user_input.lower() in ['bye']:
+      print('안녕 잘가용🤭')
+      break
+    if not user_input:
+      print('아이~ 질문을 하셔야지~')
+      continue
+    try:
+      print('답변 찾는 중o(*￣▽￣*)ブ')
+      print('-'*100)
+      answer = graphrag_pipeline(user_input)
+      print(f"\n 🐰제 생각은여~: \n{answer}")
+      print('='*100)
+    except Exception as e:
+      print(f"OMG 오류!!: {e}")

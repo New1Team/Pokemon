@@ -1,5 +1,6 @@
 NODES = [
     { "id": "N0", "label": "인간", "properties": { "name": "Ash Ketchum" } },
+    { "id": "N1", "label": "인간", "properties": { "name": "Ash" } },
     { "id": "N2", "label": "인간", "properties": { "name": "Misty" } },
     { "id": "N3", "label": "인간", "properties": { "name": "Brock" } },
     { "id": "N4", "label": "인간", "properties": { "name": "Jessie" } },
@@ -47,6 +48,7 @@ NODES = [
 #  영어 이름 → 한글 이름 변환 매핑 테이블
 KOREAN_NODE_MAP = {
     "Ash Ketchum": "지우",
+    "Ash": "지우",
     "Pikachu": "피카츄",
     "Misty": "이슬",
     "Brock": "웅",

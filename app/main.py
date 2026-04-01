@@ -33,40 +33,60 @@ class GraphResponse(BaseModel):
 # LLM에 전달되는 템플릿: 노드와 관계 추출 규칙
 # ----------------------------------------
 UPDATED_TEMPLATE = """
-You are a top-tier algorithm designed for extracting information in structured formats to build a knowledge graph. Extract the entities (nodes) and specify their type from the following text, but **you MUST select nodes ONLY from the following predefined set** (see the provided NODES list below). Do not create any new nodes or use names that do not exactly match one in the NODES list.
+### Role
+You are a top-tier algorithm designed for extracting information in structured formats to build a rigorous knowledge graph. Your goal is to extract entities (nodes) and their relationships from the provided text, strictly adhering to the following constraints.
 
-Also extract the relationships between these nodes. Return the result as JSON using the following format:
+### 🚫 CRITICAL CONSTRAINTS (Zero-Tolerance Rules)
+1. **Strict Whitelist Only:** You MUST select nodes ONLY from the predefined `NODES`. Do not invent, infer, or substitute any nodes. If a name in the text does not have an exact match in the `NODES` or the `KOREAN_NODE_MAP`, **DO NOT extract it.**
+2. **1:1 ID-to-Name Mapping:** Each unique `name` must map to exactly one `id`. You must ensure that the `nodes` list in your JSON output contains **NO DUPLICATES**. If a character appears multiple times in the text, represent them as a single node entry with their assigned unique ID.
+3. **Forbidden Names:** Any name not explicitly defined in the `KOREAN_NODE_MAP` must be strictly excluded from the final `nodes` list.
+4. **Zero-Null Policy:** In the `properties` object of both nodes and relationships, **DO NOT include any keys with null, empty, or unknown values.** (e.g., If there is no badge mentioned, the `"badge"` key must be entirely omitted from the JSON. Do not write `"badge": null`).
+5. **Relationship Filtering:** Skip any relationship if either the `start_node_id` or `end_node_id` is not present in the allowed `NODES_LIST`.
 
-{
-  "nodes": [
-    {"id": "N0", "label": "인간", "properties": {"name": "Ash Ketchum"}}
-  ],
-  "relationships": [
-    {"type": "BATTLES", "start_node_id": "N0", "end_node_id": "N3", "properties": {"outcome": "victory", "badge": "Boulder Badge"}}
-  ]
-}
-
-Additional rules:
-- Use only nodes from the NODES list. Do not invent or substitute nodes.
-- Skip any relationship if one of its entities is not in NODES.
-- Only output valid relationships where both endpoints exist in NODES and the direction matches their types.
-
-### Allowed Relationship Types:
+### 🔗 Allowed Relationship Types (REL_TYPES)
 <<REL_TYPES>>
 
-### Predefined NODES List:
-<<NODES_LIST>>
+### 📋 Predefined Lists (Whitelist)
+* **NODES:** <<NODES>>
 
-If a character's name is not exactly in the NODES list (e.g., 'the boss', 'Dratini'), DO NOT extract that relationship at all.
+* **KOREAN_NODE_MAP:** <<KOREAN_NODE_MAP>>
 
+### 📤 Output Format (Strict JSON)
+Return the result as a single JSON object. If no valid information is found, return empty lists. **Ensure the final JSON does not contain any null values.**
+
+```json
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "label": "인간",
+      "properties": {
+        "name": "지우"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "S01E01"
+        /* Notice: "badge" key is omitted here because its value was missing/null */
+      }
+    }
+  ]
+}
+```
+**Final Reminder**: If any entity, relationship, or property value is missing from the provided whitelist or the text, simply ignore it. Accuracy and data integrity are your highest priorities.
 """
-# 추후 변수처리 위하여 <<내용>> 삽입
-# 노드 리스트에 없는 관계 추출 막기위해 if~ 삽입
+
 
 # ---------------------------
 # Ollama LLM 호출 함수
 # ---------------------------
-def llm_call_structured(prompt: str, model: str = "qwen2.5:3b") -> GraphResponse:
+def llm_call_structured(prompt: str, model: str = "mistral-nemo:12b") -> GraphResponse:
 
   final_prompt = prompt + """
   Return ONLY valid JSON. Do NOT include explanations or commentary.
@@ -126,8 +146,9 @@ def process_data(episodes: List[dict]) -> GraphResponse:
 
   chunk_graphs: List[GraphResponse] = []  # 에피소드별 그래프 저장
   # prompt 변수처리 위한 코드
-  full_template = UPDATED_TEMPLATE.replace("<<NODES_LIST>>", json.dumps(NODES, ensure_ascii=False))
+  full_template = UPDATED_TEMPLATE.replace("<<NODES>>", json.dumps(NODES, ensure_ascii=False))
   full_template = full_template.replace("<<REL_TYPES>>", str(RELATIONSHIP_TYPES))  
+  full_template = full_template.replace("<<KOREAN_NODE_MAP>>", str(KOREAN_NODE_MAP))  
   for episode in episodes:
     if not episode.get("synopsis"):
       print(f"에피소드 S{episode['season']}E{episode['episode_in_season']:02d}: 시놉시스가 없어 건너뜀")

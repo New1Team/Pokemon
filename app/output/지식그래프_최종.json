@@ -1,0 +1,2538 @@
+{
+  "nodes": [
+    {
+      "id": "N0",
+      "label": "인간",
+      "properties": {
+        "name": "지우"
+      }
+    },
+    {
+      "id": "N18",
+      "label": "포켓몬",
+      "properties": {
+        "name": "리자몽"
+      }
+    },
+    {
+      "id": "N43",
+      "label": "포켓몬",
+      "properties": {
+        "name": "뮤"
+      }
+    },
+    {
+      "id": "N9",
+      "label": "인간",
+      "properties": {
+        "name": "간호순"
+      }
+    },
+    {
+      "id": "N10",
+      "label": "인간",
+      "properties": {
+        "name": "여경"
+      }
+    },
+    {
+      "id": "N2",
+      "label": "인간",
+      "properties": {
+        "name": "이슬"
+      }
+    },
+    {
+      "id": "N4",
+      "label": "인간",
+      "properties": {
+        "name": "로사"
+      }
+    },
+    {
+      "id": "N5",
+      "label": "인간",
+      "properties": {
+        "name": "로이"
+      }
+    },
+    {
+      "id": "N16",
+      "label": "포켓몬",
+      "properties": {
+        "name": "피카츄"
+      }
+    },
+    {
+      "id": "N21",
+      "label": "포켓몬",
+      "properties": {
+        "name": "이상해씨"
+      }
+    },
+    {
+      "id": "N38",
+      "label": "포켓몬",
+      "properties": {
+        "name": "메타몽"
+      }
+    },
+    {
+      "id": "N17",
+      "label": "포켓몬",
+      "properties": {
+        "name": "리자몽"
+      }
+    },
+    {
+      "id": "N20",
+      "label": "포켓몬",
+      "properties": {
+        "name": "버터플"
+      }
+    },
+    {
+      "id": "N3",
+      "label": "인간",
+      "properties": {
+        "name": "웅"
+      }
+    },
+    {
+      "id": "N45",
+      "label": "인물",
+      "properties": {
+        "name": "플린트"
+      }
+    },
+    {
+      "id": "N29",
+      "label": "포켓몬",
+      "properties": {
+        "name": "고우스트"
+      }
+    },
+    {
+      "id": "N43",
+      "label": "인간",
+      "properties": {
+        "name": "로사"
+      }
+    },
+    {
+      "id": "N44",
+      "label": "인간",
+      "properties": {
+        "name": "로이"
+      }
+    },
+    {
+      "id": "N1",
+      "label": "인간",
+      "properties": {
+        "name": "지우"
+      }
+    },
+    {
+      "id": "N11",
+      "label": "포켓몬",
+      "properties": {
+        "name": "이상해씨"
+      }
+    },
+    {
+      "id": "N37",
+      "label": "인간",
+      "properties": {
+        "name": "미들리"
+      }
+    },
+    {
+      "id": "N1",
+      "label": "포켓몬",
+      "properties": {
+        "name": "버터플"
+      }
+    },
+    {
+      "id": "N12",
+      "label": "포켓몬",
+      "properties": {
+        "name": "파이리"
+      }
+    },
+    {
+      "id": "N28",
+      "label": "포켓몬",
+      "properties": {
+        "name": "고우스트"
+      }
+    },
+    {
+      "id": "N7",
+      "label": "인간",
+      "properties": {
+        "name": "오박사"
+      }
+    },
+    {
+      "id": "N44",
+      "label": "인물",
+      "properties": {
+        "name": "빌"
+      }
+    },
+    {
+      "id": "N15",
+      "label": "포켓몬",
+      "properties": {
+        "name": "버터플"
+      }
+    },
+    {
+      "id": "N23",
+      "label": "포켓몬",
+      "properties": {
+        "name": "라티아스"
+      }
+    },
+    {
+      "id": "N43",
+      "label": "인간",
+      "properties": {
+        "name": "로이"
+      }
+    },
+    {
+      "id": "N26",
+      "label": "포켓몬",
+      "properties": {
+        "name": "메깔급태"
+      }
+    },
+    {
+      "id": "N14",
+      "label": "포켓몬",
+      "properties": {
+        "name": "나옹"
+      }
+    },
+    {
+      "id": "N37",
+      "label": "포켓몬",
+      "properties": {
+        "name": "마그ikarp"
+      }
+    },
+    {
+      "id": "N38",
+      "label": "포켓몬",
+      "properties": {
+        "name": "갸라도스"
+      }
+    },
+    {
+      "id": "N13",
+      "label": "포켓몬",
+      "properties": {
+        "name": "꼬부기"
+      }
+    },
+    {
+      "id": "N44",
+      "label": "포켓몬",
+      "properties": {
+        "name": "고르바치"
+      }
+    },
+    {
+      "id": "N45",
+      "label": "포켓몬",
+      "properties": {
+        "name": "도가바이트"
+      }
+    },
+    {
+      "id": "N2",
+      "label": "인간",
+      "properties": {
+        "name": "미스트이"
+      }
+    },
+    {
+      "id": "N30",
+      "label": "포켓몬",
+      "properties": {
+        "name": "고스트"
+      }
+    },
+    {
+      "id": "N11",
+      "label": "포켓몬",
+      "properties": {
+        "name": "버터플"
+      }
+    },
+    {
+      "id": "N30",
+      "label": "인간",
+      "properties": {
+        "name": "사브라이나"
+      }
+    },
+    {
+      "id": "N29",
+      "label": "포켓몬",
+      "properties": {
+        "name": "팬텀"
+      }
+    },
+    {
+      "id": "N39",
+      "label": "포켓몬",
+      "properties": {
+        "name": "갸라도스"
+      }
+    },
+    {
+      "id": "N17",
+      "label": "인간",
+      "properties": {
+        "name": "로사"
+      }
+    },
+    {
+      "id": "N18",
+      "label": "인간",
+      "properties": {
+        "name": "로이"
+      }
+    },
+    {
+      "id": "N27",
+      "label": "인간",
+      "properties": {
+        "name": "에rika"
+      }
+    },
+    {
+      "id": "N42",
+      "label": "포켓몬",
+      "properties": {
+        "name": "슬로우브로"
+      }
+    },
+    {
+      "id": "N26",
+      "label": "포켓몬",
+      "properties": {
+        "name": "고라파덕"
+      }
+    },
+    {
+      "id": "N36",
+      "label": "포켓몬",
+      "properties": {
+        "name": "쁘사이저"
+      }
+    },
+    {
+      "id": "N44",
+      "label": "포켓몬",
+      "properties": {
+        "name": "magnemite"
+      }
+    },
+    {
+      "id": "N45",
+      "label": "포켓몬",
+      "properties": {
+        "name": "grimer"
+      }
+    },
+    {
+      "id": "N46",
+      "label": "포켓몬",
+      "properties": {
+        "name": "muk"
+      }
+    },
+    {
+      "id": "N32",
+      "label": "포켓몬",
+      "properties": {
+        "name": "또도가스"
+      }
+    },
+    {
+      "id": "N16",
+      "label": "포켓몬",
+      "properties": {
+        "name": "Ponyta"
+      }
+    },
+    {
+      "id": "N43",
+      "label": "포켓몬",
+      "properties": {
+        "name": "Rapidash"
+      }
+    },
+    {
+      "id": "N8",
+      "label": "인간",
+      "properties": {
+        "name": "바람"
+      }
+    },
+    {
+      "id": "N41",
+      "label": "포켓몬",
+      "properties": {
+        "name": "잠만보"
+      }
+    },
+    {
+      "id": "N35",
+      "label": "포켓몬",
+      "properties": {
+        "name": "루주라"
+      }
+    },
+    {
+      "id": "N42",
+      "label": "포켓몬",
+      "properties": {
+        "name": "망나뇽"
+      }
+    },
+    {
+      "id": "N6",
+      "label": "인간",
+      "properties": {
+        "name": "비주기"
+      }
+    },
+    {
+      "id": "N12",
+      "label": "포켓몬",
+      "properties": {
+        "name": "이상해씨"
+      }
+    },
+    {
+      "id": "N12",
+      "label": "포켓몬",
+      "properties": {
+        "name": "꼬부기"
+      }
+    },
+    {
+      "id": "N27",
+      "label": "포켓몬",
+      "properties": {
+        "name": "야돈"
+      }
+    },
+    {
+      "id": "N44",
+      "label": "인간",
+      "properties": {
+        "name": "디틀라(イミテ)"
+      }
+    },
+    {
+      "id": "N39",
+      "label": "포켓몬",
+      "properties": {
+        "name": "메타몽"
+      }
+    },
+    {
+      "id": "N40",
+      "label": "포켓몬",
+      "properties": {
+        "name": "이브이"
+      }
+    },
+    {
+      "id": "N1",
+      "label": "인간",
+      "properties": {
+        "name": "웅"
+      }
+    },
+    {
+      "id": "N3",
+      "label": "포켓몬",
+      "properties": {
+        "name": "피카츄"
+      }
+    },
+    {
+      "id": "N6",
+      "label": "포켓몬",
+      "properties": {
+        "name": "나옹"
+      }
+    },
+    {
+      "id": "N37",
+      "label": "포켓몬",
+      "properties": {
+        "name": "마기카르프"
+      }
+    },
+    {
+      "id": "N15",
+      "label": "포켓몬",
+      "properties": {
+        "name": "파라스"
+      }
+    },
+    {
+      "id": "N23",
+      "label": "포켓몬",
+      "properties": {
+        "name": "파라섹트"
+      }
+    },
+    {
+      "id": "N1",
+      "label": "인간",
+      "properties": {
+        "name": "기사단"
+      }
+    },
+    {
+      "id": "N12",
+      "label": "포켓몬",
+      "properties": {
+        "name": "버터플"
+      }
+    },
+    {
+      "id": "N16",
+      "label": "포켓몬",
+      "properties": {
+        "name": "리자몽"
+      }
+    },
+    {
+      "id": "N45",
+      "label": "포켓몬",
+      "properties": {
+        "name": "에어오드actyl"
+      }
+    },
+    {
+      "id": "N15",
+      "label": "포켓몬",
+      "properties": {
+        "name": "개굴닌자"
+      }
+    },
+    {
+      "id": "N16",
+      "label": "포켓몬",
+      "properties": {
+        "name": "Togepi"
+      }
+    },
+    {
+      "id": "N1",
+      "label": "인간",
+      "properties": {
+        "name": "로사"
+      }
+    },
+    {
+      "id": "N2",
+      "label": "인간",
+      "properties": {
+        "name": "로이"
+      }
+    },
+    {
+      "id": "N31",
+      "label": "포켓몬",
+      "properties": {
+        "name": "찌리리공"
+      }
+    },
+    {
+      "id": "N30",
+      "label": "포켓몬",
+      "properties": {
+        "name": "찌리리공"
+      }
+    },
+    {
+      "id": "N42",
+      "label": "포켓몬",
+      "properties": {
+        "name": "개무소"
+      }
+    },
+    {
+      "id": "N13",
+      "label": "포켓몬",
+      "properties": {
+        "name": "피카츄"
+      }
+    },
+    {
+      "id": "N2",
+      "label": "인간",
+      "properties": {
+        "name": "웅"
+      }
+    },
+    {
+      "id": "N44",
+      "label": "인간",
+      "properties": {
+        "name": "토드 스냅"
+      }
+    },
+    {
+      "id": "N32",
+      "label": "포켓몬",
+      "properties": {
+        "name": "고라파덕"
+      }
+    },
+    {
+      "id": "N39",
+      "label": "포켓몬",
+      "properties": {
+        "name": "Magmar"
+      }
+    },
+    {
+      "id": "N11",
+      "label": "포켓몬",
+      "properties": {
+        "name": "꼬부기"
+      }
+    },
+    {
+      "id": "N21",
+      "label": "포켓몬",
+      "properties": {
+        "name": "나인테일"
+      }
+    },
+    {
+      "id": "N26",
+      "label": "포켓몬",
+      "properties": {
+        "name": "Rhydon"
+      }
+    },
+    {
+      "id": "N27",
+      "label": "포켓몬",
+      "properties": {
+        "name": "잉어킹"
+      }
+    },
+    {
+      "id": "N45",
+      "label": "인간",
+      "properties": {
+        "name": "블라스트"
+      }
+    },
+    {
+      "id": "N46",
+      "label": "포켓몬",
+      "properties": {
+        "name": "마그마"
+      }
+    },
+    {
+      "id": "N22",
+      "label": "포켓몬",
+      "properties": {
+        "name": "푸린"
+      }
+    },
+    {
+      "id": "N33",
+      "label": "포켓몬",
+      "properties": {
+        "name": "아쿠스타"
+      }
+    },
+    {
+      "id": "N44",
+      "label": "포켓몬",
+      "properties": {
+        "name": "시드라"
+      }
+    },
+    {
+      "id": "N37",
+      "label": "포켓몬",
+      "properties": {
+        "name": "메가니움"
+      }
+    },
+    {
+      "id": "N41",
+      "label": "인간",
+      "properties": {
+        "name": "오스왈드"
+      }
+    },
+    {
+      "id": "N1",
+      "label": "인간",
+      "properties": {
+        "name": "이슬"
+      }
+    },
+    {
+      "id": "N25",
+      "label": "포켓몬",
+      "properties": {
+        "name": "디그다"
+      }
+    },
+    {
+      "id": "N16",
+      "label": "포켓몬",
+      "properties": {
+        "name": "야돈"
+      }
+    },
+    {
+      "id": "N14",
+      "label": "포켓몬",
+      "properties": {
+        "name": "Shellder"
+      }
+    },
+    {
+      "id": "N17",
+      "label": "포켓몬",
+      "properties": {
+        "name": "Slowbro"
+      }
+    },
+    {
+      "id": "N13",
+      "label": "포켓몬",
+      "properties": {
+        "name": "고라파덕"
+      }
+    },
+    {
+      "id": "N16",
+      "label": "포켓몬",
+      "properties": {
+        "name": "나옹"
+      }
+    },
+    {
+      "id": "N43",
+      "label": "포켓몬",
+      "properties": {
+        "name": "Persian"
+      }
+    },
+    {
+      "id": "N16",
+      "label": "포켓몬",
+      "properties": {
+        "name": "Krabby"
+      }
+    },
+    {
+      "id": "N44",
+      "label": "인간",
+      "properties": {
+        "name": "Mandi the Astounding"
+      }
+    },
+    {
+      "id": "N45",
+      "label": "포켓몬",
+      "properties": {
+        "name": "Kingler"
+      }
+    },
+    {
+      "id": "N16",
+      "label": "포켓몬",
+      "properties": {
+        "name": "꼬부기"
+      }
+    },
+    {
+      "id": "N44",
+      "label": "인간",
+      "properties": {
+        "name": "피트돌맨"
+      }
+    },
+    {
+      "id": "N45",
+      "label": "포켓몬",
+      "properties": {
+        "name": "클로저"
+      }
+    },
+    {
+      "id": "N46",
+      "label": "포켓몬",
+      "properties": {
+        "name": "아르카나"
+      }
+    },
+    {
+      "id": "N14",
+      "label": "포켓몬",
+      "properties": {
+        "name": "니드キング"
+      }
+    },
+    {
+      "id": "N30",
+      "label": "포켓몬",
+      "properties": {
+        "name": "고우스트"
+      }
+    },
+    {
+      "id": "N85",
+      "label": "인간",
+      "properties": {
+        "name": "카오루코"
+      }
+    },
+    {
+      "id": "N104",
+      "label": "포켓몬",
+      "properties": {
+        "name": "브이젤"
+      }
+    },
+    {
+      "id": "N79",
+      "label": "포켓몬",
+      "properties": {
+        "name": "메가니움"
+      }
+    },
+    {
+      "id": "N43",
+      "label": "포켓몬",
+      "properties": {
+        "name": "메타몽"
+      }
+    },
+    {
+      "id": "N43",
+      "label": "인간",
+      "properties": {
+        "name": "리치"
+      }
+    },
+    {
+      "id": "N44",
+      "label": "인간",
+      "properties": {
+        "name": "로사"
+      }
+    },
+    {
+      "id": "N45",
+      "label": "인간",
+      "properties": {
+        "name": "로이"
+      }
+    },
+    {
+      "id": "N12",
+      "label": "포켓몬",
+      "properties": {
+        "name": "리자몽"
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N18",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE01"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N43",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE01"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N9",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE02"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N2",
+      "end_node_id": "N4",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE02"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N10",
+      "end_node_id": "N9",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE02"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N16",
+      "end_node_id": "N4",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE02"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N0",
+      "end_node_id": "N21",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE03"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N21",
+      "end_node_id": "N38",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE03"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N17",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE04"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N20",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE04"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N3",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE05"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N45",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE05"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N3",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE05"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE05"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N3",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE05"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N4",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE06"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N3",
+      "end_node_id": "N29",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE06"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N2",
+      "properties": {
+        "outcome": "interrupted",
+        "episode_number": "SIndigo_LeagueE07"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N43",
+      "end_node_id": "N18",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE07"
+      }
+    },
+    {
+      "type": "RELEASES",
+      "start_node_id": "N43",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE07"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "R0",
+      "properties": {
+        "badge_name": "Cascade Badge",
+        "episode_number": "SIndigo_LeagueE07"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE08"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N4",
+      "end_node_id": "N5",
+      "properties": {
+        "outcome": "loss",
+        "episode_number": "SIndigo_LeagueE08"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N1",
+      "end_node_id": "N2",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE09"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N1",
+      "end_node_id": "N3",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE09"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N17",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE10"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N37",
+      "end_node_id": "N11",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE10"
+      }
+    },
+    {
+      "type": "RELEASES",
+      "start_node_id": "N37",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE10"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N12",
+      "properties": {
+        "outcome": "rescue",
+        "episode_number": "SIndigo_LeagueE11"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N12",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE11"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N12",
+      "end_node_id": "N0",
+      "properties": {
+        "previous_trainer": "ダイスケ",
+        "episode_number": "SIndigo_LeagueE11"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N28",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE12"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N16",
+      "end_node_id": "N28",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE12"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N28",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE12"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE13"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N4",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE13"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE14"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N15",
+      "properties": {
+        "trade_details": "St. Anne Cruise Ship",
+        "episode_number": "SIndigo_LeagueE15"
+      }
+    },
+    {
+      "type": "RELEASES",
+      "start_node_id": "N0",
+      "end_node_id": "N15",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE15"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N43",
+      "end_node_id": "N26",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE15"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N4",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE16"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N5",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE16"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N37",
+      "end_node_id": "N38",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE16"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N5",
+      "properties": {
+        "outcome": "loss",
+        "episode_number": "SIndigo_LeagueE17"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N2",
+      "end_node_id": "N3",
+      "properties": {
+        "purpose": "exploration",
+        "episode_number": "SIndigo_LeagueE17"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N4",
+      "end_node_id": "N5",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE18"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N2",
+      "end_node_id": "N4",
+      "properties": {
+        "outcome": "loss",
+        "episode_number": "SIndigo_LeagueE18"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N2",
+      "end_node_id": "N44",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE19"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE20"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N2",
+      "end_node_id": "N4",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE20"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N30",
+      "end_node_id": "N16",
+      "properties": {
+        "outcome": "failure",
+        "episode_number": "SIndigo_LeagueE20"
+      }
+    },
+    {
+      "type": "RELEASES",
+      "start_node_id": "N0",
+      "end_node_id": "N11",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE21"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N4",
+      "end_node_id": "N11",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE21"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N30",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE22"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N11",
+      "end_node_id": "N29",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE22"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N11",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE23"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE23"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N12",
+      "end_node_id": "N39",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE23"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE24"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N28",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE24"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N16",
+      "end_node_id": "N23",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE24"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N29",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE25"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N29",
+      "end_node_id": "N30",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE25"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N1",
+      "end_node_id": "N30",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE25"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N29",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE26"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE26"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N17",
+      "end_node_id": "N18",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE26"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N4",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE27"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N1",
+      "end_node_id": "N16",
+      "properties": {
+        "since_episode": "S01E01",
+        "episode_number": "SIndigo_LeagueE27"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N2",
+      "end_node_id": "N4",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE27"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N26",
+      "end_node_id": "N26",
+      "properties": {
+        "by_pokemon": "고라파덕",
+        "episode_number": "SIndigo_LeagueE27"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N2",
+      "end_node_id": "N3",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE28"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N29",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE29"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N36",
+      "properties": {
+        "given_away": true,
+        "episode_number": "SIndigo_LeagueE29"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N0",
+      "end_node_id": "N46",
+      "properties": {
+        "method": "poke_ball",
+        "episode_number": "SIndigo_LeagueE30"
+      }
+    },
+    {
+      "type": "FOLLOWS",
+      "start_node_id": "N44",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE30"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N14",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE31"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N14",
+      "end_node_id": "N32",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE31"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N2",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE32"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N2",
+      "end_node_id": "N30",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE32"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE33"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N16",
+      "end_node_id": "N43",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE33"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N0",
+      "end_node_id": "N41",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE34"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N8",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE34"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N6",
+      "end_node_id": "N14",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE34"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N5",
+      "end_node_id": "N4",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE34"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N29",
+      "end_node_id": "N35",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE34"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N0",
+      "end_node_id": "N12",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE35"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N12",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE36"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N9",
+      "end_node_id": "N27",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE36"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N4",
+      "end_node_id": "N5",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE36"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N44",
+      "end_node_id": "N39",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE37"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N16",
+      "end_node_id": "N5",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE37"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N4",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE38"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N39",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE38"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE39"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N17",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE39"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N1",
+      "end_node_id": "N40",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE40"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N4",
+      "end_node_id": "N5",
+      "properties": {
+        "outcome": "disruption",
+        "episode_number": "SIndigo_LeagueE40"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N1",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE42"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N3",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE42"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N4",
+      "end_node_id": "N5",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE42"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N12",
+      "end_node_id": "N17",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE43"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N37",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE43"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N15",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE44"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N15",
+      "end_node_id": "N23",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE44"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N17",
+      "end_node_id": "N15",
+      "properties": {
+        "outcome": "loss",
+        "episode_number": "SIndigo_LeagueE44"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N2",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE44"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N3",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE44"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N4",
+      "end_node_id": "N1",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE44"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N5",
+      "end_node_id": "N1",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE44"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N3",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE45"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N4",
+      "end_node_id": "N5",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE45"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N12",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE46"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N12",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE46"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N1",
+      "end_node_id": "N4",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE48"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N5",
+      "end_node_id": "N15",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE48"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N2",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE49"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N16",
+      "end_node_id": "N2",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE49"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N2",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE50"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N1",
+      "end_node_id": "N16",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE50"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N11",
+      "properties": {
+        "outcome": "loss",
+        "episode_number": "SIndigo_LeagueE51"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N11",
+      "end_node_id": "N43",
+      "properties": {
+        "location": "Mysterious Garden",
+        "episode_number": "SIndigo_LeagueE51"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N1",
+      "end_node_id": "N11",
+      "properties": {
+        "by_force": true,
+        "episode_number": "SIndigo_LeagueE51"
+      }
+    },
+    {
+      "type": "RELEASES",
+      "start_node_id": "N1",
+      "end_node_id": "N43",
+      "properties": {
+        "method": "rescue",
+        "episode_number": "SIndigo_LeagueE51"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N4",
+      "end_node_id": "N31",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE52"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N31",
+      "end_node_id": "N26",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE52"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N2",
+      "end_node_id": "N14",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE53"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE53"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N42",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE54"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE54"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N2",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE55"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N44",
+      "end_node_id": "N13",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE55"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N2",
+      "end_node_id": "N32",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE57"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N16",
+      "end_node_id": "N4",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE57"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N16",
+      "end_node_id": "N39",
+      "properties": {
+        "outcome": null,
+        "episode_number": "SIndigo_LeagueE58"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE58"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N7",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE58"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N45",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE59"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE59"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N45",
+      "end_node_id": "N46",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE59"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": null,
+      "end_node_id": null,
+      "properties": {
+        "episode_number": "SIndigo_LeagueE59"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N17",
+      "end_node_id": "N46",
+      "properties": {
+        "outcome": "victory",
+        "badge_earned": "화산",
+        "episode_number": "SIndigo_LeagueE59"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N13",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE60"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N22",
+      "end_node_id": "N17",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE60"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N2",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE61"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N2",
+      "end_node_id": "N33",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE61"
+      }
+    },
+    {
+      "type": "RELEASES",
+      "start_node_id": "N2",
+      "end_node_id": "N44",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE61"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N12",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE62"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N2",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE62"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N3",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE62"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE62"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N8",
+      "end_node_id": "N6",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE63"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N6",
+      "end_node_id": "N43",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE63"
+      }
+    },
+    {
+      "type": "RELEASES",
+      "start_node_id": "N6",
+      "end_node_id": "N43",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE63"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N6",
+      "end_node_id": "N23",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE63"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N4",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE63"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": null,
+      "end_node_id": "N14",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE63"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N6",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE63"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE63"
+      }
+    },
+    {
+      "type": "RELEASES",
+      "start_node_id": "N6",
+      "end_node_id": "N43",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE63"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N43",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE64"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N23",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE65"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N7",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE65"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE66"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N3",
+      "end_node_id": "N17",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE66"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N23",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE66"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N41",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE66"
+      }
+    },
+    {
+      "type": "TELLS",
+      "start_node_id": "N7",
+      "end_node_id": "N0",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE67"
+      }
+    },
+    {
+      "type": "TELLS",
+      "start_node_id": "N7",
+      "end_node_id": "N8",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE67"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N43",
+      "end_node_id": "N16",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE67"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N7",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE68"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N4",
+      "end_node_id": "N14",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE68"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N29",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE69"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N30",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE69"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N2",
+      "end_node_id": "N13",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE71"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N13",
+      "end_node_id": "N22",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE71"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N16",
+      "end_node_id": "N43",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE72"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N11",
+      "end_node_id": "N22",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE74"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N2",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE75"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N3",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE75"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N4",
+      "end_node_id": "N37",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE75"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE76"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N4",
+      "end_node_id": "N5",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE76"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE77"
+      }
+    },
+    {
+      "type": "EVOLVES_TO",
+      "start_node_id": "N16",
+      "end_node_id": "N45",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE77"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE78"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N44",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE78"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N44",
+      "end_node_id": "N45",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE78"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N44",
+      "end_node_id": "N46",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE78"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N8",
+      "end_node_id": "N30",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE79"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N104",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE79"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N43",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE80"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE80"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N43",
+      "end_node_id": "N17",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE80"
+      }
+    },
+    {
+      "type": "BATTLES",
+      "start_node_id": "N0",
+      "end_node_id": "N43",
+      "properties": {
+        "outcome": "defeat",
+        "episode_number": "SIndigo_LeagueE81"
+      }
+    },
+    {
+      "type": "OWNS",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE81"
+      }
+    },
+    {
+      "type": "SENDS_OUT",
+      "start_node_id": "N0",
+      "end_node_id": "N17",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE81"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N0",
+      "end_node_id": "N16",
+      "properties": {
+        "outcome": "defeat",
+        "reason": "Charizard's disobedience",
+        "episode_number": "SIndigo_LeagueE82"
+      }
+    },
+    {
+      "type": "TEAMS_UP",
+      "start_node_id": "N0",
+      "end_node_id": "N2",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE82"
+      }
+    },
+    {
+      "type": "BATTLES_TRAINER",
+      "start_node_id": "N8",
+      "end_node_id": "N7",
+      "properties": {
+        "outcome": "victory",
+        "episode_number": "SIndigo_LeagueE82"
+      }
+    },
+    {
+      "type": "CAPTURES",
+      "start_node_id": "N7",
+      "end_node_id": "N12",
+      "properties": {
+        "episode_number": "SIndigo_LeagueE82"
+      }
+    }
+  ]
+}

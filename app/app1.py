@@ -34,7 +34,7 @@ class Neo4jCreateWriter(KGWriter):
 
         # 모든 노드를 Neo4j에 추가 (MERGE 사용: 노드가 없으면 생성, 있으면 업데이트)
         for node in graph.nodes:
-          labels = f":{node.label}"  # 노드 레이블 문자열 생성
+          labels = f":`{node.label}`" if node.label else ""  # 노드 레이블 문자열 생성
           session.run(
             f"""
             MERGE (n{labels} {{id: $id}})
@@ -81,15 +81,34 @@ async def write_to_neo4j(graph: Neo4jGraph):
   print(result)  # 결과 출력
 
 
+# properties null 제거함수
+def clean_props(data_list):
+  clean_list=[]
+  for item in data_list:
+    if "properties" not in item or item["properties"] is None:
+      item["properties"] = {}
+    if isinstance(item["properties"], dict):
+      item["properties"] = {k:v for k, v in item["properties"].items() if v is not None}
+    clean_list.append(item)
+  return clean_list
+
 if __name__ == "__main__":
   # JSON 파일에서 그래프 데이터 로드
   with open("output/지식그래프_최종.json", "r", encoding="utf-8") as f:
     data = json.load(f)  # JSON 파일 읽기
 
+  # 데이터 전처리
+  clean_nodes = clean_props(data.get("nodes",[]))
+  temp_rels = data.get("relationships", [])
+  valid_rels = [
+      rel for rel in temp_rels 
+      if rel.get("start_node_id") is not None and rel.get("end_node_id") is not None
+  ]
+  clean_rels = clean_props(valid_rels)
   # JSON 노드를 Neo4jNode 객체로 변환
-  nodes = [Neo4jNode(**node) for node in data["nodes"]]
+  nodes = [Neo4jNode(**node) for node in clean_nodes]
   # JSON 관계를 Neo4jRelationship 객체로 변환 (관계가 없으면 빈 리스트)
-  relationships = [Neo4jRelationship(**rel) for rel in data.get("relationships", [])]
+  relationships = [Neo4jRelationship(**rel) for rel in clean_rels]
   # 그래프 객체 생성
   graph = Neo4jGraph(nodes=nodes, relationships=relationships)
 
