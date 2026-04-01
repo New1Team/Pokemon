@@ -26,7 +26,7 @@
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-@for %%i in ("C:\Users\hi\Desktop\poket_pj\Pokemon\.venv") do @set "VIRTUAL_ENV=%%~fi"
+@for %%i in ("C:\Users\hi\Desktop\Sooah\Team\Pokemon\.venv") do @set "VIRTUAL_ENV=%%~fi"
 
 @set "VIRTUAL_ENV_PROMPT=pokemon"
 @if NOT DEFINED VIRTUAL_ENV_PROMPT (

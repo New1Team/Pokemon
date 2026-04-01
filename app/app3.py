@@ -225,7 +225,7 @@ def main():
       except Exception as e:
         print(f"Error fetching data from {link}: {e}")
         continue
-    print(f"총 {len(all_episodes)}개 에피소드 수집 완료")
+    # print(f"총 {len(all_episodes)}개 에피소드 수집 완료")
     summary_text = "\n".join([f"Ep {e['episode_in_season']}: {e['synopsis']}" for e in all_episodes[:5]]) # 테스트용 5개만
     extracted_result = llm_call_structured(summary_text)
     # save_output(all_episodes, extracted_result)

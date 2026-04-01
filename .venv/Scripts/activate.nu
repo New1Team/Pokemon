@@ -68,7 +68,7 @@ export-env {
         }
     }
 
-    let virtual_env = 'C:\Users\hi\Desktop\poket_pj\Pokemon\.venv'
+    let virtual_env = 'C:\Users\hi\Desktop\Sooah\Team\Pokemon\.venv'
     let bin = 'Scripts'
     let path_name = if (has-env 'Path') { 'Path' } else { 'PATH' }
     let venv_path = ([$virtual_env $bin] | path join)
